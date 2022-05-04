@@ -1,0 +1,114 @@
+body {
+    background-image: url(Projector-Screens.jpg);
+    background-size: cover;
+    position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    /* cursor: pointer; */
+    color: black;
+    margin-top: -230px;
+
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.navbar ul li a:hoover::after {
+    content: '';
+    height: 5px;
+    width: 0%;
+    background: #ffeffe;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+.navbar ul li:hoover::hoover:after {
+    width: 100%;
+}
+
+
+.content {
+    width: 110%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+.content h1 {
+    font-size: 80px;
+    margin-top: 40px;
+}
+
+.content p {
+    font-size: 30px;
+    font-weight: 100%;
+    line-height: 20px;
+    margin-bottom: 8-0px;
+}
+
+button {
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 5px solid #ffeffe;
+    background: transparent;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 520px;
+    margin-left: 350px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+span {
+    background: #b76cb2;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+
+button:hover span {
+    width: 100%;
+
+
+}
+
+button:hover {
+    border: none;
+}
